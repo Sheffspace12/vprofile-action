@@ -83,7 +83,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
+          aws-secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Get Kube config file   
